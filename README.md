@@ -22,6 +22,7 @@ Plain HTML and one stylesheet (`assets/site.css`). No build step, and no third-p
 - **Type:** Young Serif (display) and Figtree (text), self-hosted as woff2 in `assets/fonts/` with their SIL Open Font License texts.
 - **Colour:** the art kit's palette: ivory `#F8F8F0`, evergreen `#244C45`, glacier `#8EC9E5`, mint `#A6DCAA`, alpine blue `#6EAAE8`, amber `#F4C673`, with deeper tints for text so every pairing meets WCAG AA. Light and dark themes follow `prefers-color-scheme`.
 - **Accessibility:** skip link, landmarks, alt text, 44 px targets, visible focus, AA contrast in both themes, trail markers by shape as well as colour, smooth scrolling only without `prefers-reduced-motion`. Mobile first: no horizontal scroll at 375 px.
+- **Look:** the same creative style as the Reps marketing set (`~/Developer/GitHub/_reps-creative-assets`, `render.swift` and the `style` block of `assets.json`: grain 0.1, dots 0.16, glow 0.55, shadow 0.7). In CSS, `.stage` is Reps' paper (a wash, a glow just below the middle, multiplied grain, and a dot grid that is clear in the middle and stronger toward the edges) and `.print` is chapter art on an ivory mat with Reps' ambient and contact shadows. A headline's second line takes the accent colour, as Reps sets its accent line. The generator ports `paper()` and `phone()` to Python for the press header art and for framing real captures.
 - **Images:** chapter art as WebP (768 and 1536 px, `srcset`), icons as PNG, every `img` with `width` and `height`.
 - **Honesty:** the copy describes the planned 1.0 in the same terms as the App Store listing (`appstore/listing.json` in the game repo). The five paintings are the Journey's chapter art and are always captioned that way, never as captures of play. Screenshots and a trailer arrive with 1.0.
 
@@ -35,9 +36,11 @@ Plain HTML and one stylesheet (`assets/site.css`). No build step, and no third-p
 | `assets/press/snowline-icon[-dark\|-tinted]-{1024,512}.png` | the same folder's `icon-1024.png`, `icon-1024-dark.png`, `icon-1024-tinted.png` |
 | `assets/press/snowline-logo-on-{ivory,evergreen}.png` | the icon plus the wordmark, drawn in Young Serif from `assets/fonts` |
 | `assets/img/art/<mountain>-{768,1536}.webp`, `assets/press/snowline-chapter-<mountain>.jpg` | `art-source/Snowline_Asset_Kit_v2/maps/*.png` |
+| `assets/press/snowline-header-16x9.jpg`, `assets/img/press-header-960.webp` | header art in the Reps universal-header layout: paper, the tagline, and two chapter-art prints |
+| `assets/img/grain.png` | the Reps paper grain (seeded), multiplied over `.stage` sections |
 | `assets/img/og.png` (1200 x 630) | `appstore/marketing/social/link-preview-1200x630.png` when it exists, otherwise a card drawn from the icon and chapter art |
 | `assets/listing.json` | `appstore/listing.json` (public copy only) |
-| `assets/img/shots/*.webp` | `appstore/screenshots/final/` (only with `--with-screenshots`; deleted otherwise) |
+| `assets/img/shots/NN-<scene>{,-small}.webp` | `appstore/screenshots/raw/{iphone,ipad}/*.png`, each real capture in the Reps phone frame (only with `--with-screenshots`; deleted otherwise) |
 
 It also rewrites the text between these marker comments. Everything outside them is edited here by hand.
 
