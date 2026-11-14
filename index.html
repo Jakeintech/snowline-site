@@ -4,17 +4,18 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Snowline: Ski Resort Builder for iPhone and iPad</title>
-<meta name="description" content="Snowline is a calm, strategic ski-resort game. Draw trails and lifts on a miniature mountain and watch hundreds of tiny skiers bring it to life. One price. No ads. No in-app purchases.">
+<meta name="description" content="Snowline is a calm, clever ski-resort strategy game for iPhone and iPad. Draw trails and lifts on a little mountain and watch tiny skiers bring it to life. One price. No ads. No in-app purchases.">
 <meta name="color-scheme" content="light dark">
-<meta name="theme-color" content="#F6F2EA" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#141A30" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#F8F8F0" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0E1C1A" media="(prefers-color-scheme: dark)">
+<!-- appmeta:start --><!-- appmeta:end -->
 <link rel="canonical" href="https://jakeintech.github.io/snowline-site/">
 <link rel="icon" type="image/png" href="assets/img/favicon.png">
 <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Snowline">
 <meta property="og:title" content="Snowline: a little mountain, a thousand possibilities">
-<meta property="og:description" content="A calm, strategic ski-resort game. Draw trails and lifts; hundreds of tiny skiers do the rest.">
+<meta property="og:description" content="A calm, clever ski-resort strategy game for iPhone and iPad. Draw trails. Watch them ski.">
 <meta property="og:url" content="https://jakeintech.github.io/snowline-site/">
 <meta property="og:image" content="https://jakeintech.github.io/snowline-site/assets/img/og.png">
 <meta property="og:image:width" content="1200">
@@ -22,25 +23,40 @@
 <meta property="og:image:alt" content="Snowline. A little mountain. A thousand possibilities.">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Snowline: a little mountain, a thousand possibilities">
-<meta name="twitter:description" content="A calm, strategic ski-resort game for iPhone and iPad. Draw trails. Watch them ski.">
+<meta name="twitter:description" content="A calm, clever ski-resort strategy game for iPhone and iPad. Draw trails. Watch them ski.">
 <meta name="twitter:image" content="https://jakeintech.github.io/snowline-site/assets/img/og.png">
+<meta name="twitter:image:alt" content="Snowline. A little mountain. A thousand possibilities.">
 <link rel="preload" href="assets/fonts/young-serif-400.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/figtree-var.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="assets/site.css">
+<!-- ld:start -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "VideoGame",
   "name": "Snowline: Ski Resort Builder",
-  "description": "A calm, strategic ski-resort game. Draw trails and lifts on a procedurally generated miniature mountain and watch hundreds of tiny autonomous skiers bring it to life.",
-  "genre": ["Simulation", "Strategy"],
-  "gamePlatform": ["iPhone", "iPad"],
+  "alternateName": "Snowline",
+  "description": "Snowline is a calm, clever ski-resort strategy game. Draw a trail down the mountain with one finger, draw a lift back up, and watch tiny skiers bring your resort to life. They choose runs that suit their ability, wait in real lift lines, chase fresh snow and head home when they tire. When something goes wrong, the mountain shows you where, and one good change can fix the whole day.",
+  "genre": [
+    "Simulation",
+    "Strategy"
+  ],
+  "gamePlatform": [
+    "iPhone",
+    "iPad"
+  ],
   "operatingSystem": "iOS 18 or later",
   "applicationCategory": "GameApplication",
+  "playMode": "SinglePlayer",
   "url": "https://jakeintech.github.io/snowline-site/",
-  "author": { "@type": "Person", "name": "Jake Williams" }
+  "image": "https://jakeintech.github.io/snowline-site/assets/img/icon-512.png",
+  "author": {
+    "@type": "Person",
+    "name": "Jake Williams"
+  }
 }
 </script>
+<!-- ld:end -->
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -51,157 +67,249 @@
     Snowline
   </a>
   <nav class="site-nav" aria-label="Site">
-    <a href="#modes">Modes</a>
+    <a href="#mountains">Mountains</a>
+    <a href="press.html">Press</a>
     <a href="support.html">Support</a>
   </nav>
 </header>
 
 <main id="main">
 
-<section class="hero">
+<section class="hero" aria-labelledby="hero-title">
   <div class="wrap hero-grid">
-    <img class="hero-icon" src="assets/img/icon-512.png" width="152" height="152" alt="The Snowline app icon: a snowy miniature mountain at dusk with a curving trail and a chairlift.">
     <div>
-      <p class="tag">A ski-resort game for iPhone and iPad</p>
-      <h1><span class="line">A little mountain.</span> <span class="line">A thousand possibilities.</span></h1>
+      <img class="hero-icon" src="assets/img/icon-192.png" width="76" height="76" alt="The Snowline app icon: an evergreen peak with an ivory S-shaped trail and an amber gondola on a glacier-blue sky.">
+      <p class="tag">A ski-resort builder for iPhone and iPad</p>
+      <h1 id="hero-title"><span class="line">A little mountain.</span> <span class="line">A thousand possibilities.</span></h1>
       <!-- promo:start -->
-      <p class="lede">Draw trails and lifts on a tiny mountain and watch hundreds of skiers bring it to life. One price. No ads. No in-app purchases.</p>
-<!-- promo:end -->
+      <p class="lede">Draw trails and lifts, then watch tiny skiers queue, carve and chase the snow. One price. No ads. No <span class="nb">in-app</span> purchases.</p>
+      <!-- promo:end -->
       <div class="hero-cta">
-        <span class="soon"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 16 8 6l3 5 2-3 5 8Z"/></svg>Coming to the App Store</span>
+        <!-- store-cta:start --><span class="soon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 37 19 14l10 15 6-9 8 17H6Z"/></svg>Coming soon to the App Store</span><!-- store-cta:end -->
         <a href="#how">How it plays</a>
       </div>
+      <p class="fine">Premium: one price, no ads, no in-app purchases. iOS 18 or later.</p>
     </div>
+    <figure class="art">
+      <img src="assets/img/art/alpine-dawn-1536.webp" srcset="assets/img/art/alpine-dawn-768.webp 768w, assets/img/art/alpine-dawn-1536.webp 1536w" sizes="(min-width: 1140px) 580px, (min-width: 960px) 52vw, 100vw" width="1536" height="1024" fetchpriority="high" alt="A painted miniature ski mountain at morning: a timber lodge and lift station in a snowy village, a chairlift climbing between evergreens, and pale green runs winding down to the base.">
+      <figcaption>Alpine Dawn, the first mountain of the Journey. Chapter art, not a capture of play.</figcaption>
+    </figure>
   </div>
 </section>
 
-<section class="showcase" aria-label="A look at Snowline">
-  <div class="wrap">
-<!-- screenshots:start -->
-    <h2 class="visually-hidden">Screenshots</h2>
-    <ul class="shots">
-      <li><img src="assets/img/shots/01-overview.webp" width="1600" height="736" alt="Draw a ski resort. A whole Snowline resort on its mountain, with trails, lifts and skiers."></li>
-      <li><img src="assets/img/shots/02-drawing.webp" width="1600" height="736" loading="lazy" alt="The terrain decides the difficulty. A trail being drawn down the mountain, its difficulty marker set by the slope."></li>
-      <li><img src="assets/img/shots/03-queue.webp" width="1600" height="736" loading="lazy" alt="Lifts are the bottleneck. Skiers queueing at the base of a busy lift."></li>
-      <li><img src="assets/img/shots/04-snowfall.webp" width="1600" height="736" loading="lazy" alt="Weather changes everything. Snow falling on the resort while the forecast strip shows the weather ahead."></li>
-    </ul>
-<!-- screenshots:end -->
-  </div>
-</section>
-
-<section class="section" id="how">
+<section class="section" id="how" aria-labelledby="how-title">
   <div class="wrap">
     <p class="tag">How it plays</p>
-    <h2>Draw trails. Watch them ski.</h2>
-    <p class="intro">Snowline is calm and strategic. You shape the resort; hundreds of tiny skiers decide whether it works.</p>
+    <h2 id="how-title">Draw trails. Watch them ski.</h2>
+    <p class="intro">One gesture. A living mountain. You draw the runs and the lifts; the skiers, the weather and the lift lines respond on their own.</p>
     <ol class="steps">
-      <li><span class="n">One</span><h3>Draw the trails</h3><p>Sketch runs down a mountain generated fresh for every game. A trail's difficulty comes from the real slope it crosses, so the ground decides what is beginner and what is expert.</p></li>
-      <li><span class="n">Two</span><h3>Build the lifts</h3><p>Trails carry skiers down; lifts carry them back up. Lifts are the uphill bottleneck, and the queues show you where your resort is struggling.</p></li>
-      <li><span class="n">Three</span><h3>Watch them ski</h3><p>Skiers arrive with different abilities, queue for lifts, pick their runs, react to the snow and the weather, and leave happy or frustrated. Every run tells you why.</p></li>
+      <li>
+        <span class="ico"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 40 C11 28 32 29 26 17 S32 8 40 8"/><circle cx="9" cy="40" r="3"/><circle cx="40" cy="8" r="3"/></svg></span>
+        <span class="n">One</span>
+        <h3>Draw the trails</h3>
+        <p>Drag one finger downhill, right on the terrain. A trail takes its difficulty from the ground it crosses, so a switchback across a steep face becomes a gentler run.</p>
+      </li>
+      <li>
+        <span class="ico"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12H43M12 12v7m24-7v7M18 19h12v13H18zM16 32h16M22 32v4m4-4v4"/></svg></span>
+        <span class="n">Two</span>
+        <h3>Run the lifts</h3>
+        <p>Trails carry skiers down; lifts carry them back up. Start with a surface tow, run chairlifts up the ridges and send a gondola to the high peaks.</p>
+      </li>
+      <li>
+        <span class="ico"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="15" r="4"/><circle cx="24" cy="12" r="4"/><circle cx="36" cy="15" r="4"/><path d="M4 35v-5a8 8 0 0 1 16 0v5m-2-1v-7a6 6 0 0 1 12 0v7m-2 1v-5a8 8 0 0 1 16 0v5"/></svg></span>
+        <span class="n">Three</span>
+        <h3>Watch them ski</h3>
+        <p>Skiers choose runs that suit their ability, wait in real lift lines, chase fresh snow and head home when they tire. When something goes wrong, the mountain shows you where.</p>
+      </li>
     </ol>
   </div>
 </section>
 
-<section class="section" id="terrain">
+<section class="section" id="terrain" aria-labelledby="terrain-title">
   <div class="wrap">
     <p class="tag">The terrain decides</p>
-    <h2>Every trail wears its difficulty.</h2>
-    <p class="intro">Trail markers use shape as well as colour, so they read at a glance and without colour vision.</p>
+    <h2 id="terrain-title">Every run wears its difficulty.</h2>
+    <p class="intro">Runs are marked the way skiers expect, by shape as well as colour, so they read at a glance and without colour vision.</p>
     <ul class="markers">
-      <li><svg viewBox="0 0 34 34" aria-hidden="true"><circle cx="17" cy="17" r="13" fill="var(--m-green)"/></svg><div><b>Green circle</b><span>Beginner</span></div></li>
-      <li><svg viewBox="0 0 34 34" aria-hidden="true"><rect x="5" y="5" width="24" height="24" rx="2.5" fill="var(--m-blue)"/></svg><div><b>Blue square</b><span>Intermediate</span></div></li>
-      <li><svg viewBox="0 0 34 34" aria-hidden="true"><rect class="mk-black" x="8" y="8" width="18" height="18" transform="rotate(45 17 17)"/></svg><div><b>Black diamond</b><span>Advanced</span></div></li>
-      <li><svg viewBox="0 0 34 34" aria-hidden="true"><rect class="mk-black" x="2.5" y="11" width="12" height="12" transform="rotate(45 8.5 17)"/><rect class="mk-black" x="19.5" y="11" width="12" height="12" transform="rotate(45 25.5 17)"/></svg><div><b>Double diamond</b><span>Expert</span></div></li>
+      <li><svg viewBox="0 0 36 36" aria-hidden="true" focusable="false"><circle class="mk-green" cx="18" cy="18" r="14"/></svg><div><b>Green circle</b><span>Beginner</span></div></li>
+      <li><svg viewBox="0 0 36 36" aria-hidden="true" focusable="false"><rect class="mk-blue" x="5" y="5" width="26" height="26" rx="2.5"/></svg><div><b>Blue square</b><span>Intermediate</span></div></li>
+      <li><svg viewBox="0 0 36 36" aria-hidden="true" focusable="false"><rect class="mk-black" x="8.5" y="8.5" width="19" height="19" transform="rotate(45 18 18)"/></svg><div><b>Black diamond</b><span>Advanced</span></div></li>
     </ul>
   </div>
 </section>
 
-<section class="section" id="features">
+<!-- screenshots:start -->
+<section class="section" id="mountains" aria-labelledby="mountains-title">
   <div class="wrap">
-    <p class="tag">On the mountain</p>
-    <h2>Small world. Real decisions.</h2>
+    <p class="tag">The Journey</p>
+    <h2 id="mountains-title">Five mountains, each with a character of its own.</h2>
+    <p class="intro">Each mountain is a short scenario of four to six in-game days, with three medals to earn.</p>
+    <p class="note">These paintings are the game's chapter art, shown when you choose a mountain. They are not captures of play. Screenshots of play arrive with the 1.0 release.</p>
+    <ul class="peaks">
+      <li class="peak">
+        <img src="assets/img/art/alpine-dawn-768.webp" srcset="assets/img/art/alpine-dawn-768.webp 768w, assets/img/art/alpine-dawn-1536.webp 1536w" sizes="(min-width: 720px) 50vw, 100vw" width="1536" height="1024" loading="lazy" alt="A painted miniature mountain at morning: a timber lodge and lift station in a snowy village, a chairlift climbing between evergreens, and pale green runs winding down to the base.">
+        <div class="body">
+          <p class="n">Chapter 1 &middot; The basics</p>
+          <h3>Alpine Dawn</h3>
+          <p>Open slopes above a small village. Your first trails, your first lift and your first skiers.</p>
+        </div>
+      </li>
+      <li class="peak">
+        <img src="assets/img/art/pine-valley-768.webp" srcset="assets/img/art/pine-valley-768.webp 768w, assets/img/art/pine-valley-1536.webp 1536w" sizes="(min-width: 720px) 50vw, 100vw" width="1536" height="1024" loading="lazy" alt="A painted forested valley: chairlifts rise up both sides from one base, where a crowd of tiny skiers waits in line.">
+        <div class="body">
+          <p class="n">Chapter 2 &middot; Lift lines</p>
+          <h3>Pine Valley</h3>
+          <p>A forested valley where the lifts meet at one busy base. Keep the lines moving.</p>
+        </div>
+      </li>
+      <li class="peak">
+        <img src="assets/img/art/glacier-basin-768.webp" srcset="assets/img/art/glacier-basin-768.webp 768w, assets/img/art/glacier-basin-1536.webp 1536w" sizes="(min-width: 960px) 33vw, (min-width: 720px) 50vw, 100vw" width="1536" height="1024" loading="lazy" alt="A painted alpine basin: ice-blue glacier falls high above, a chairlift and winding runs below, and a sunny lower bowl where the snow has thinned to grass beside a stream.">
+        <div class="body">
+          <p class="n">Chapter 3 &middot; Snow</p>
+          <h3>Glacier Basin</h3>
+          <p>An icy upper basin above a sunny low bowl. Make the snow last.</p>
+        </div>
+      </li>
+      <li class="peak">
+        <img src="assets/img/art/high-ridge-768.webp" srcset="assets/img/art/high-ridge-768.webp 768w, assets/img/art/high-ridge-1536.webp 1536w" sizes="(min-width: 960px) 33vw, (min-width: 720px) 50vw, 100vw" width="1536" height="1024" loading="lazy" alt="A painted steep, rocky crest with snow blowing off the summit, a chairlift climbing to a station at the top, and a run curving through sheltered trees below.">
+        <div class="body">
+          <p class="n">Chapter 4 &middot; Wind</p>
+          <h3>High Ridge</h3>
+          <p>An exposed crest above sheltered runs. Plan for the days the wind closes the high lifts.</p>
+        </div>
+      </li>
+      <li class="peak">
+        <img src="assets/img/art/three-peaks-768.webp" srcset="assets/img/art/three-peaks-768.webp 768w, assets/img/art/three-peaks-1536.webp 1536w" sizes="(min-width: 960px) 33vw, (min-width: 720px) 50vw, 100vw" width="1536" height="1024" loading="lazy" alt="A painted resort of three snowy peaks around one village, with chairlifts and a gondola, a terrain park with jumps between them, and runs winding down each peak.">
+        <div class="body">
+          <p class="n">Chapter 5 &middot; Everything at once</p>
+          <h3>Three Peaks</h3>
+          <p>Three peaks share one village. Lift lines, snow and wind, all at once.</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+<!-- screenshots:end -->
+
+<section class="section" id="features" aria-labelledby="features-title">
+  <div class="wrap">
+    <p class="tag">The mountain is the interface</p>
+    <h2 id="features-title">A small world. Real decisions.</h2>
+    <p class="intro">No spreadsheets and no menus to manage. Tap a lift or a run to see why it is busy and what would help.</p>
     <div class="grid">
       <div>
-        <svg class="ico" viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 18a5 5 0 1 1 1.6-9.7A6.5 6.5 0 0 1 22 10.5 4 4 0 0 1 21 18Z"/><path d="M10 22v.01M14 23v.01M18 22v.01"/></svg>
+        <span class="ico"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="15" r="4"/><circle cx="24" cy="12" r="4"/><circle cx="36" cy="15" r="4"/><path d="M4 35v-5a8 8 0 0 1 16 0v5m-2-1v-7a6 6 0 0 1 12 0v7m-2 1v-5a8 8 0 0 1 16 0v5"/></svg></span>
+        <h3>Skiers with minds of their own</h3>
+        <p>Beginners, families and experts pick their own routes by ability, queue time and conditions.</p>
+      </div>
+      <div>
+        <span class="ico"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12H43M12 12v7m24-7v7M18 19h12v13H18zM16 32h16M22 32v4m4-4v4"/></svg></span>
+        <h3>Lifts are the bottleneck</h3>
+        <p>Lift lines grow from real demand and real lift capacity. Upgrade a busy chair and watch where the crowd goes next.</p>
+      </div>
+      <div>
+        <span class="ico"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 16h27c8 0 8-10 1-10-4 0-6 2-6 5M5 24h35M5 32h24c9 0 9 10 2 10-4 0-6-2-6-5"/></svg></span>
         <h3>A forecast to plan around</h3>
-        <p>A forecast strip shows what is coming. Snow falls, wind closes exposed lifts, and warm days soften the low runs.</p>
+        <p>The forecast warns you before a storm, a windy day or a warm spell. Fresh powder draws the experts; wind can close exposed lifts.</p>
       </div>
       <div>
-        <svg class="ico" viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 23 25 5"/><path d="M10 17v5h5v-2M18 11v5h5v-2"/></svg>
-        <h3>Four kinds of lift</h3>
-        <p>Surface tow, chairlift, high-speed chair and gondola. Choose what each slope needs.</p>
+        <span class="ico"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M24 5v38M5 24h38M10.6 10.6l26.8 26.8M37.4 10.6 10.6 37.4M20 9l4 4 4-4M20 39l4-4 4 4"/></svg></span>
+        <h3>Snow is finite</h3>
+        <p>Sunny low slopes thin out while high bowls hold their cover. Where you build decides how long the day lasts.</p>
       </div>
       <div>
-        <svg class="ico" viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 23 11 9l5 8 3-4 6 10Z"/><path d="M11 9l2 3"/></svg>
-        <h3>A new mountain every time</h3>
-        <p>Procedurally generated terrain, so every resort starts from different ground.</p>
+        <span class="ico"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="24" cy="24" r="9"/><path d="M24 3v9m0 24v9M3 24h9m24 0h9M9 9l6.5 6.5m17 17L39 39M9 39l6.5-6.5m17-17L39 9"/></svg></span>
+        <h3>One choice each morning</h3>
+        <p>Before the lifts open, choose where the day's effort goes. The crews take care of the rest.</p>
       </div>
       <div>
-        <svg class="ico" viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 20V6l12-2v14"/><circle cx="8" cy="20" r="3"/><circle cx="20" cy="18" r="3"/></svg>
-        <h3>Music that moves with you</h3>
-        <p>An original adaptive score, and Core Haptics you can feel as the mountain fills up.</p>
-      </div>
-      <div>
-        <svg class="ico" viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4l20 20"/><path d="M9.5 13a6 6 0 0 1 4.4-1.6M5 9.4a12 12 0 0 1 4-2.6M14 6a12 12 0 0 1 9 3.4M12 18.5a2.5 2.5 0 0 1 4 0"/></svg>
-        <h3>Fully offline</h3>
-        <p>Every mode plays without a connection. Take it on a plane, a train or a chairlift.</p>
-      </div>
-      <div>
-        <svg class="ico" viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="22" height="14" rx="3"/><path d="M8 7v14"/></svg>
-        <h3>iPhone and iPad</h3>
-        <p>Landscape on iPhone, roomy on iPad. iOS 18 or later. Game Center achievements and leaderboards, if you want them.</p>
+        <span class="ico"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 11 7 23l13 11M8 23h22c7 0 11 5 11 11"/></svg></span>
+        <h3>Undo, pause, speed up</h3>
+        <p>Undo and redo any change, pause at any time, and speed up when the resort hums.</p>
       </div>
     </div>
   </div>
 </section>
 
-<section class="section" id="modes">
+<section class="section" id="kit" aria-labelledby="kit-title">
   <div class="wrap">
-    <p class="tag">Five ways to play</p>
-    <h2>Score it, savour it, or chase the summit.</h2>
+    <p class="tag">Six features</p>
+    <h2 id="kit-title">Six ways to shape the day.</h2>
+    <p class="intro">Each one changes where skiers go, how long the snow lasts or how safely the mountain runs.</p>
+    <ul class="kit">
+      <li><span class="ico"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 39h38M8 39l15-24 12 24M29 16h13v7H29M32 9v7"/></svg></span><div><b>Terrain park</b><span>Draws freestyle skiers to the runs around it.</span></div></li>
+      <li><span class="ico"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12H43M12 12v7m24-7v7M18 19h12v13H18zM16 32h16M22 32v4m4-4v4"/></svg></span><div><b>High-capacity lift</b><span>Moves more skiers uphill. Watch the runs it feeds.</span></div></li>
+      <li><span class="ico"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 24 24 9l18 15"/><path d="M11 20v19h26V20M20 39V29h8v10M32 15V8h4v10"/></svg></span><div><b>Warming hut</b><span>Somewhere for tired skiers to rest and warm up.</span></div></li>
+      <li><span class="ico"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 11c7 6 13 6 20 0s11-6 14 0M7 22c7 6 13 6 20 0s11-6 14 0M7 33c7 6 13 6 20 0s11-6 14 0"/></svg></span><div><b>Grooming station</b><span>Keeps nearby runs in shape between days.</span></div></li>
+      <li><span class="ico"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M24 4 41 10v12c0 12-8 18-17 22C15 40 7 34 7 22V10L24 4Z"/><path d="M24 14v19m-9-9.5h18"/></svg></span><div><b>Patrol outpost</b><span>Helps its corner of the mountain stay open when the weather turns.</span></div></li>
+      <li><span class="ico"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 33h22l6-15H15L5 33Zm8 0v7m12-7v7M31 14l6-6m-3 13 9-3m-9 11 9 4"/><circle cx="39" cy="8" r="2"/><circle cx="44" cy="18" r="2"/></svg></span><div><b>Snowmaking</b><span>Protects the snow within its reach on cold days.</span></div></li>
+    </ul>
+  </div>
+</section>
+
+<section class="section" id="modes" aria-labelledby="modes-title">
+  <div class="wrap">
+    <p class="tag">Three ways to play</p>
+    <h2 id="modes-title">Earn the medals, build at leisure, or take on today's peak.</h2>
     <ul class="modes">
-      <li><h3>Resort Run</h3><p>A scored session of 12 to 18 minutes. Build, adapt to the weather, and see how your resort did.</p></li>
-      <li><h3>Zen Mountain</h3><p>No failure, no pressure. Build at your own pace and watch the skiers enjoy it.</p></li>
-      <li><h3>Daily Mountain</h3><p>The same mountain for everyone, every day, with a Game Center leaderboard.</p></li>
-      <li><h3>Endless Summit</h3><p>Play on, with no end to the run.</p></li>
-      <li class="journey"><h3>Mountain Journey</h3><p>Five mountains, each with its own character.</p>
-        <ul class="peaks" aria-label="The five Journey mountains">
-          <li>Alpine Dawn</li><li>Pine Valley</li><li>High Ridge</li><li>Glacier Basin</li><li>Three Peaks</li>
-        </ul>
+      <li class="journey">
+        <p class="tag">Start here</p>
+        <h3>Journey</h3>
+        <p>Five mountains, each with three medals to earn. Alpine Dawn teaches the basics, Pine Valley tests your lift lines, Glacier Basin your snow, High Ridge the wind, and Three Peaks everything at once. <a href="#mountains">Meet the mountains</a></p>
+      </li>
+      <li>
+        <h3>Zen</h3>
+        <p>Build at your own pace, with no way to fail.</p>
+      </li>
+      <li>
+        <h3>Daily Peak</h3>
+        <p>A new mountain every day, the same for every player.</p>
       </li>
     </ul>
   </div>
 </section>
 
-<section class="section" id="accessibility">
+<section class="section" id="comfort" aria-labelledby="comfort-title">
   <div class="wrap">
     <p class="tag">Comfortable by design</p>
-    <h2>Made for everyone on the mountain.</h2>
+    <h2 id="comfort-title">Made for everyone on the mountain.</h2>
     <div class="split">
       <div class="panel">
-        <h3>Accessibility</h3>
+        <h3>Accessibility and comfort</h3>
         <ul>
-          <li>Trail difficulty shown by shape as well as colour: circle, square, diamond</li>
+          <li>Difficulty never relies on colour alone: circle, square, diamond</li>
           <li>Respects Reduce Motion</li>
-          <li>A VoiceOver summary of how your resort is doing</li>
+          <li>Large touch targets, at least 44 points</li>
+          <li>Adjustable game speed, and pause at any time</li>
+          <li>Plays fully offline</li>
+          <li>iPhone in landscape, and iPad</li>
         </ul>
       </div>
       <div class="panel privacy">
         <span class="label">Data Not Collected</span>
         <h3>One price. Nothing else.</h3>
-        <p>No ads. No in-app purchases. No account. No tracking. Your saves stay on your device. Game Center is optional and handled by Apple.</p>
+        <p>Snowline is a premium game. You pay once, and that is all.</p>
+        <ul>
+          <li>No ads</li>
+          <li>No in-app purchases</li>
+          <li>No account, and no tracking</li>
+          <li>Your resorts are saved on your device</li>
+        </ul>
         <p><a href="privacy-policy.html">Read the privacy policy</a></p>
       </div>
     </div>
   </div>
 </section>
 
-<section class="closing">
+<section class="closing" aria-labelledby="closing-title">
   <div class="wrap">
     <img src="assets/img/icon-192.png" width="88" height="88" alt="">
-    <h2>Your mountain is waiting.</h2>
-    <p>Snowline is coming to iPhone and iPad. One price. No ads. No in-app purchases.</p>
-    <a class="btn" href="support.html">Questions? Read the FAQ</a>
+    <h2 id="closing-title">Your mountain is waiting.</h2>
+    <p>Snowline is a ski-resort builder for iPhone and iPad. One price. No ads. No in-app purchases.</p>
+    <div class="hero-cta">
+      <!-- store-cta:start --><span class="soon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 37 19 14l10 15 6-9 8 17H6Z"/></svg>Coming soon to the App Store</span><!-- store-cta:end -->
+      <a href="press.html">Press kit</a>
+    </div>
   </div>
 </section>
 
@@ -210,25 +318,16 @@
 <footer class="site-foot">
   <div class="wrap">
     <nav aria-label="Footer">
+      <a href="./">Home</a>
+      <a href="press.html">Press kit</a>
       <a href="support.html">Support</a>
       <a href="privacy-policy.html">Privacy Policy</a>
       <a href="terms-of-service.html">Terms of Use</a>
       <a href="mailto:info@jakeawilliams.com">Contact</a>
     </nav>
-    <p>Type set in Young Serif and Figtree, under the <a href="assets/fonts/OFL-YoungSerif.txt">SIL Open Font License</a>.</p>
-    <p>&copy; 2026 Jake Williams. Apple, iPhone, iPad, Game Center and App Store are trademarks of Apple Inc.</p>
+    <p>Type set in Young Serif and Figtree, both under the SIL Open Font License (<a href="assets/fonts/OFL-YoungSerif.txt">Young Serif</a>, <a href="assets/fonts/OFL-Figtree.txt">Figtree</a>).</p>
+    <p>&copy; 2026 Jake Williams. Apple, iPhone, iPad and App Store are trademarks of Apple Inc., registered in the U.S. and other countries.</p>
   </div>
 </footer>
-<script>
-  // The illustration is animated with SVG; hold it still for people who prefer reduced motion.
-  (function () {
-    var svg = document.querySelector("svg.anim");
-    if (!svg || !svg.pauseAnimations) return;
-    var mq = window.matchMedia("(prefers-reduced-motion: reduce)");
-    function apply() { if (mq.matches) svg.pauseAnimations(); else svg.unpauseAnimations(); }
-    if (mq.addEventListener) mq.addEventListener("change", apply);
-    apply();
-  })();
-</script>
 </body>
 </html>
