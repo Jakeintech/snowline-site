@@ -149,6 +149,7 @@ p { margin: 0 0 1em; text-wrap: pretty; }
 .btn svg { width: 20px; height: 20px; flex: none; }
 .btn.quiet { background: transparent; color: var(--ink); border: 1.5px solid var(--line2); }
 .btn.quiet:hover { background: var(--bg2); color: var(--ink); }
+.btn.store { box-shadow: var(--shadow); }
 .soon {
   display: inline-flex; align-items: center; gap: 10px; min-height: 52px; padding: 0 22px;
   border: 1.5px solid var(--line2); border-radius: 999px; color: var(--ink); font-weight: 700; font-size: 16px;
