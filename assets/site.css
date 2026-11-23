@@ -292,6 +292,15 @@ p { margin: 0 0 1em; text-wrap: pretty; }
 .site-foot nav { display: flex; flex-wrap: wrap; gap: 0 4px; margin: 0 0 14px -10px; }
 .site-foot nav a { display: inline-flex; align-items: center; min-height: 44px; color: var(--ink2); text-decoration: none; padding: 0 10px; border-radius: 10px; }
 .site-foot nav a:hover { color: var(--ink); background: var(--bg2); }
+.site-foot nav a[aria-current="true"] { color: var(--ink); text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 6px; }
+
+/* Japanese: Latin keeps the brand faces, CJK falls through to the system ones.
+   Latin letter-spacing is wrong for CJK headings, so clear it. */
+html[lang="ja"] {
+  --serif: "Young Serif", "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif JP", "Iowan Old Style", Georgia, serif;
+  --sans: "Figtree", -apple-system, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Noto Sans JP", sans-serif;
+}
+html[lang="ja"] h1, html[lang="ja"] h2, html[lang="ja"] h3 { letter-spacing: 0; }
 .site-foot p { margin: 0 0 6px; max-width: 56em; }
 
 /* FAQ */
